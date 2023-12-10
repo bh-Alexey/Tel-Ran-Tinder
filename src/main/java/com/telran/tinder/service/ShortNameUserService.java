@@ -15,9 +15,9 @@ public class ShortNameUserService implements UserService {
     public User getNewUser() {
         List<User> users = new ArrayList<>();
 
-        User firstUser = new User(1, "Tim", 100, "Just Petr");
-        User secondUser = new User(2, "Vera", 150, "I like puppies");
-        User thirdUser = new User(3, "Pavel", 200, "I hate puppies");
+        User firstUser = new User(1, "Tim", 100, "My friends call me Timon))");
+        User secondUser = new User(2, "Vera", 150, "I like mango");
+        User thirdUser = new User(3, "Pavel", 200, "I hate winter season");
 
         users.add(firstUser);
         users.add(secondUser);
