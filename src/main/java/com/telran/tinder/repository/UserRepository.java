@@ -32,6 +32,7 @@ public interface UserRepository extends JpaRepository<User, Long> {
             " WHERE u.id = :id")
     boolean findById(@Param(value = "id") int id);
 
-    @Query(nativeQuery = true, value = "SELECT * FROM account ORDER BY account.id LIMIT :pageSize OFFSET :paging")
-    List<User> getAllUsers(int pageSize, int pageNum);
+
+    @Query(nativeQuery = true, value = "SELECT * FROM account ORDER BY account.id LIMIT :pageSize OFFSET :pageNum")
+    List<User> getAllUsers(@Param(value = "pageSize") int pageSize, @Param(value = "pageNum") int pageNum);
 }

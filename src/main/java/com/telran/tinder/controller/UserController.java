@@ -22,5 +22,6 @@ public class UserController {
     public List<User> getByName(@PathVariable(value = "name") String name) {
         return userService.getByName(name);
     }
+
 }
 

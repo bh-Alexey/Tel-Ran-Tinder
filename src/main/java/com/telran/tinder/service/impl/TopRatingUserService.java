@@ -66,7 +66,7 @@ public class TopRatingUserService implements UserService {
         if (pageNum > 1) {
             paging = pageSize * (pageNum - 1);
         }
-        return userRepository.getAllUsers(pageSize, pageNum);
+        return userRepository.getAllUsers(pageSize, paging);
     }
 
 }
